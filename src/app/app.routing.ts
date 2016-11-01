@@ -20,7 +20,7 @@ export const routes:Routes = [
 
 
       },
-      {path: 'home', loadChildren: 'app/+home/home.module#HomeModule',data:{pageTitle: 'Home'}},
+      {path: 'home', loadChildren: 'app/+home/home.module#HomeModule',data:{pageTitle: 'Dashboard'}},
       { path: 'patients/add-patient', component: PatientAddComponent, data:{pageTitle: 'Patients'} },
       { path: 'patients/list-patients', component: PatientListComponent },
       { path: 'patients/view-patient', component: PatientViewComponent }
