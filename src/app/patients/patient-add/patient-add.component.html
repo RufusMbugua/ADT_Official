@@ -1,0 +1,289 @@
+<div id="content">
+  <div class="row">
+    <sa-big-breadcrumbs [items]="['Patients', 'Add patients']" icon="pencil-square-o" class="col-xs-12 col-sm-7 col-md-7 col-lg-4"></sa-big-breadcrumbs>
+  </div>
+    <form class="form-horizontal">
+        <!--First Column-->
+        <div class="col-sm-4">
+            <div class="well bs-component">
+                <!--<form class="form-horizontal">-->
+                <fieldset>
+                    <legend>
+                        Patient Information and Demographics
+                    </legend>
+                    <div class="col-sm-6">
+                        <label>Medical Record Number</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-sm-6">
+                        <label>Patient Number</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-sm-12">
+                        <label>Last Name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-sm-6">
+                        <label>First Name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-sm-6">
+                        <label>Other Name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-sm-6">
+                        <label>Date of Birth</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-sm-6">
+                        <label>Place of Birth</label>
+                        <select class="form-control" id="select-1" placeholder="--Select--">
+                            <option>--Select--</option>
+							<option>Athi River</option>
+							<option>Baringo</option>
+					    </select>
+                    </div>
+                    <div class="col-sm-6">
+                        <label>Age (Years)</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-sm-6">
+                        <label>Age (Months)</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-sm-7">
+                        <label>Gender</label>
+                        <select class="form-control" id="select-1" placeholder="--Select--">
+                            <option>--Select--</option>
+							<option>Male</option>
+							<option>Female</option>
+                            <option>Other</option>
+					    </select>
+                    </div>
+                    <!--<div class="col-sm-6"> </div>-->
+                    <div class="col-sm-6">
+                        <label>Weight (KG)</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-sm-6">
+                        <label>Height (CM)</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-sm-12">
+                        <label>Body Surface Area (MSQ)</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-sm-6">
+                        <label>Patient's Phone Contact(s)</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-sm-6">
+                        <label>Receive SMS Reminders</label>
+                        <div class="col-md-10">
+                            <label class="radio radio-inline">															
+                                <input type="radio" class="radiobox" name="style-0a">
+                                <span>Yes</span>                                 
+                            </label>
+                            <label class="radio radio-inline">
+                                <input type="radio" class="radiobox" name="style-0a">
+                                <span>No</span>  
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <label>Patient's Physical Contact(s)</label>
+                        <textarea class="form-control" rows="2"></textarea>
+                    </div>
+                    <div class="col-sm-12">
+                        <label>Patient's Alternate Contact(s)</label>
+                        <textarea class="form-control" rows="2"></textarea>
+                    </div>
+                    <div class="col-sm-12">
+                        <label>Does Patient Belong to any Support Group?</label>
+                    </div>
+                    <div class="col-sm-12">
+                        <label class="checkbox-inline"><input type="checkbox">Yes </label>
+                    </div>
+                    <div class="col-sm-12">
+                        <label>List Them</label>
+                        <textarea class="form-control" rows="2"></textarea>
+                    </div>
+                </fieldset>
+                <!--</form>-->
+            </div>
+        </div>
+        <!--First Column End-->
+
+
+        <!--Second Column-->
+        <div class="col-sm-4">
+            <div class="well bs-component">
+                <!--<form class="form-horizontal">-->
+                <fieldset>
+                    <legend>
+                        Patient History
+                    </legend>
+                    <div class="col-sm-12">
+                        <label>Does Patient have other Chronic Illnesses</label>
+                        <select class="form-control" id="select-1" placeholder="--Select Options--">
+                            <option>--Select--</option>
+							<option>Male</option>
+							<option>Female</option>
+                            <option>Other</option>
+					    </select>
+                    </div>
+                    <div class="col-sm-12">
+                        <label>If other Illnesses</label>
+                    </div>
+                    <div class="col-sm-12">
+                        <label class="checkbox-inline"><input type="checkbox">Click Here</label>
+                    </div>
+                    <div class="col-sm-12">
+                        <label>List Them Below (Use Commas to Separate)</label>
+                        <textarea class="form-control" rows="2"></textarea>
+                    </div>
+                    <div class="col-sm-12">
+                        <label>Is Patient Taking any Other Drugs?</label>
+                    </div>
+                    <div class="col-sm-12">
+                        <label class="checkbox-inline"><input type="checkbox">Yes</label>
+                    </div>
+                    <div class="col-sm-12">
+                        <label>List Them</label>
+                        <textarea class="form-control" rows="2"></textarea>
+                    </div>
+                    <div class="col-sm-12">
+                        <label>Drug Allergies/ADR</label>
+                        <select class="form-control" id="select-1" placeholder="--Select Options--">
+                            <option>--Select--</option>
+							<option>Male</option>
+							<option>Female</option>
+                            <option>Other</option>
+					    </select>
+                    </div>
+                    <div class="col-sm-12">
+                        <label>Does Patient have any Other Drugs/ADR not Listed?</label>
+                    </div>
+                    <div class="col-sm-12">
+                        <label class="checkbox-inline"><input type="checkbox">Yes</label>
+                    </div>
+                    <div class="col-sm-12">
+                        <label>List Them</label>
+                        <textarea class="form-control" rows="2"></textarea>
+                    </div>
+                    <div class="col-sm-6">
+                        <label>Does Patient Smoke?</label>
+                        <select class="form-control" id="select-1" placeholder="No">
+                            <option>No</option>
+							<option>Yes</option>
+						 </select>
+                    </div>
+                    <div class="col-sm-6">
+                        <label>Does Patient Drink Alcohol?</label>
+                        <select class="form-control" id="select-1" placeholder="No">
+                            <option>No</option>
+							<option>Yes</option>
+						 </select>
+                    </div>
+                    <div class="col-sm-6">
+                        <label>Has Patient been tested for TB?</label>
+                        <select class="form-control" id="select-1" placeholder="No">
+                            <option>No</option>
+							<option>Yes</option>
+						 </select>
+                    </div>
+                    <div class="col-sm-6">
+                        <label>Does Patient have TB?</label>
+                        <select class="form-control" id="select-1" placeholder="No">
+                            <option>No</option>
+							<option>Yes</option>
+						 </select>
+                    </div>
+                </fieldset>
+                <!--</form>-->
+            </div>
+
+        </div>
+        <!--Second Column end-->
+
+
+        <!--Third Column-->
+        <div class="col-sm-4">
+            <div class="well bs-component">
+                <!--<form class="form-horizontal">-->
+                <fieldset>
+                    <legend>
+                        Patient Information
+                    </legend>
+                    <div class="col-sm-12">
+                        <label>Date Patient Enrolled</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-sm-12">
+                        <label>Current Status</label>
+                        <select class="form-control" id="select-1" placeholder="No">
+                            <option>No</option>
+							<option>Yes</option>
+						 </select>
+                    </div>
+                    <div class="col-sm-12">
+                        <label>Source of Patient</label>
+                        <select class="form-control" id="select-1" placeholder="No">
+                            <option>No</option>
+							<option>Yes</option>
+						 </select>
+                    </div>
+                    <div class="col-sm-12">
+                        <label>Type of Service</label>
+                        <select class="form-control" id="select-1" placeholder="No">
+                            <option>No</option>
+							<option>Yes</option>
+						 </select>
+                    </div>
+                    <div class="col-sm-12">
+                        <label>Start Regimen</label>
+                        <select class="form-control" id="select-1" placeholder="No">
+                            <option>No</option>
+							<option>Yes</option>
+						 </select>
+                    </div>
+                    <div class="col-sm-12">
+                        <label>Start Regimen Date</label>
+                        <select class="form-control" id="select-1" placeholder="No">
+                            <option>No</option>
+							<option>Yes</option>
+						 </select>
+                    </div>
+                    <div class="col-sm-12">
+                        <label>WHO Stage</label>
+                        <select class="form-control" id="select-1" placeholder="No">
+                            <option>No</option>
+							<option>Yes</option>
+						 </select>
+                    </div>
+                    <div class="col-sm-12">
+                        <label>Drug Prophylaxis</label>
+                        <select class="form-control" id="select-1" placeholder="No">
+                            <option>No</option>
+							<option>Yes</option>
+						 </select>
+                    </div>
+
+                </fieldset>
+
+                <!--</form>-->
+            </div>
+            <div class="col-sm-12" align="right">
+                <button class="btn btn-primary" type="submit">
+					<i class="fa fa-save"></i>Save
+				</button>
+                <button class="btn btn-primary" type="submit">
+                    <i class="fa fa-save"></i>Dispense
+                </button>
+                <input type="reset" class="btn btn-danger button_size" value="Reset">
+            </div>
+        </div>
+
+        <!--Third Column End-->
+    </form>
+</div>
