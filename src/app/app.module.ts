@@ -1,4 +1,4 @@
-import {NgModule} from '@angular/core';
+import {NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import {SmartadminModule} from './shared/smartadmin.module'
 import {AppComponent} from './app.component';
@@ -30,7 +30,8 @@ import { PatientViewComponent } from './patients/patient-view/patient-view.compo
   ],
   providers: [UserService],
   // entryComponents: [AppComponent],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule {
 
