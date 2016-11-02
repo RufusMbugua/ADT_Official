@@ -1,0 +1,6 @@
+/* This enables the image to fit perfectly inside a HTML element such as divs*/
+#adt {
+    max-width: 100%;
+    max-height: 100%;
+    padding-left: 8px;
+}
