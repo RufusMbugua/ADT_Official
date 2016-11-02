@@ -6,9 +6,6 @@
 import {Routes, RouterModule} from '@angular/router';
 import {MainLayoutComponent} from "./shared/layout/app-layouts/main-layout.component";
 import {AuthLayoutComponent} from "./shared/layout/app-layouts/auth-layout.component";
-import { PatientAddComponent } from './patients/patient-add/patient-add.component';
-import { PatientListComponent } from './patients/patient-list/patient-list.component';
-import { PatientViewComponent } from './patients/patient-view/patient-view.component';
 
 export const routes:Routes = [
   {
@@ -21,9 +18,7 @@ export const routes:Routes = [
 
       },
       {path: 'home', loadChildren: 'app/+home/home.module#HomeModule',data:{pageTitle: 'Dashboard'}},
-      { path: 'patients/add-patient', component: PatientAddComponent, data:{pageTitle: 'Patients'} },
-      { path: 'patients/list-patients', component: PatientListComponent },
-      { path: 'patients/view-patient', component: PatientViewComponent }
+      {path: 'patients', loadChildren: 'app/patients/patients.module#PatientsModule', data:{pageTitle: 'Patients'}}
       // {path: 'dashboard', loadChildren: 'app/+dashboard/dashboard.module#DashboardModule',data:{pageTitle: 'Dashboard'}},
       // {path: 'smartadmin', loadChildren: 'app/+smartadmin-intel/smartadmin-intel.module#SmartadminIntelModule',data:{pageTitle: 'Smartadmin'}},
       // {path: 'app-views', loadChildren: 'app/+app-views/app-views.module#AppViewsModule',data:{pageTitle: 'App Views'}},
