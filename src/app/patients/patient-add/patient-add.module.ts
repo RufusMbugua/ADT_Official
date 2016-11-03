@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { patientaddRouting } from './patient-add.routing';
 import { PatientAddComponent }   from './patient-add.component';
@@ -7,6 +7,7 @@ import {SmartadminInputModule} from "../../shared/forms/input/smartadmin-input.m
 
 @NgModule({
     imports: [
+        CommonModule,
         patientaddRouting,
         SmartadminModule,
         SmartadminInputModule

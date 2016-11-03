@@ -7,7 +7,6 @@ import {routing} from './app.routing';
 import {BrowserModule} from "@angular/platform-browser";
 import {UserModule} from "./shared/user/user.module";
 import {UserService} from "./shared/user/user.service";
-import {PatientsModule} from "./patients/patients.module"
 
 @NgModule({
   declarations: [
@@ -20,7 +19,7 @@ import {PatientsModule} from "./patients/patients.module"
     routing,
 
     SmartadminModule.forRoot(),
-    UserModule.forRoot(),
+    UserModule.forRoot()
   ],
   providers: [UserService],
   // entryComponents: [AppComponent],
