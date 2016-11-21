@@ -2,17 +2,11 @@
   <div class="row">
     <sa-big-breadcrumbs [items]="['Table', 'Data Tables']" icon="table"
                         class="col-xs-12 col-sm-7 col-md-7 col-lg-4"></sa-big-breadcrumbs>
-    <sa-stats></sa-stats>
   </div>
-
+  
   <sa-widgets-grid>
-
-
     <div class="row">
       <article class="col-sm-12">
-
-
- 
 
         <sa-widget [editbutton]="false" color="blueDark">
           <header><span class="widget-icon"> <i class="fa fa-table"></i> </span>
@@ -23,7 +17,9 @@
               <sa-datatable
                 [options]="{
             ajax: 'assets/api/tables/datatables.filters.json',
-            columns: [ {data: 'name'}, {data: 'position'}, {data: 'office'}, {data: 'age'}, {data: 'date'}, {data: 'salary'} ] }
+            columns: [ {data: 'name'}, {data: 'position'}, {data: 'office'}, {data: 'age'}, {data: 'date'}, {data: 'salary'} ], buttons: [
+                'copy', 'excel', 'pdf', 'print'
+                ] }
             "
                 filter="true" tableClass="table table-condenced table-striped table-bordered">
                 <thead>
@@ -73,14 +69,8 @@
               </sa-datatable>
             </div>
           </div>
-        </sa-widget>
-
-
-        
+        </sa-widget>        
       </article>
-
-
     </div>
-
   </sa-widgets-grid>
 </div>
