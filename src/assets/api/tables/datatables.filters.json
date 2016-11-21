@@ -6,7 +6,8 @@
       "office": "Edinburgh",
       "age": "61",
       "date": "2014/12/12",
-      "salary": "$320,800"
+      "salary": "$320,800",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Garrett Winters",
@@ -14,7 +15,8 @@
       "office": "Tokyo",
       "age": "63",
       "date": "2011/07/25",
-      "salary": "$170,750"
+      "salary": "$170,750",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Ashton Cox",
@@ -22,7 +24,8 @@
       "office": "San Francisco",
       "age": "66",
       "date": "2014/01/12",
-      "salary": "$86,000"
+      "salary": "$86,000",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Cedric Kelly",
@@ -30,7 +33,8 @@
       "office": "Edinburgh",
       "age": "22",
       "date": "2012/03/29",
-      "salary": "$433,060"
+      "salary": "$433,060",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Airi Satou",
@@ -38,7 +42,8 @@
       "office": "Tokyo",
       "age": "33",
       "date": "2008/11/28",
-      "salary": "$162,700"
+      "salary": "$162,700",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Brielle Williamson",
@@ -46,7 +51,8 @@
       "office": "New York",
       "age": "61",
       "date": "2012/12/02",
-      "salary": "$372,000"
+      "salary": "$372,000",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Herrod Chandler",
@@ -54,7 +60,8 @@
       "office": "San Francisco",
       "age": "59",
       "date": "2012/08/06",
-      "salary": "$137,500"
+      "salary": "$137,500",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Rhona Davidson",
@@ -62,7 +69,8 @@
       "office": "Tokyo",
       "age": "55",
       "date": "2010/10/14",
-      "salary": "$327,900"
+      "salary": "$327,900",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Colleen Hurst",
@@ -70,7 +78,8 @@
       "office": "San Francisco",
       "age": "39",
       "date": "2014/09/15",
-      "salary": "$205,500"
+      "salary": "$205,500",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Sonya Frost",
@@ -78,7 +87,8 @@
       "office": "Edinburgh",
       "age": "23",
       "date": "2008/12/13",
-      "salary": "$103,600"
+      "salary": "$103,600",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Jena Gaines",
@@ -86,7 +96,8 @@
       "office": "London",
       "age": "30",
       "date": "2008/12/19",
-      "salary": "$90,560"
+      "salary": "$90,560",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Quinn Flynn",
@@ -94,7 +105,8 @@
       "office": "Edinburgh",
       "age": "22",
       "date": "2013/03/03",
-      "salary": "$342,000"
+      "salary": "$342,000",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Charde Marshall",
@@ -102,7 +114,8 @@
       "office": "San Francisco",
       "age": "36",
       "date": "2008/10/16",
-      "salary": "$470,600"
+      "salary": "$470,600",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Haley Kennedy",
@@ -110,7 +123,8 @@
       "office": "London",
       "age": "43",
       "date": "2012/12/18",
-      "salary": "$313,500"
+      "salary": "$313,500",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Tatyana Fitzpatrick",
@@ -118,7 +132,8 @@
       "office": "London",
       "age": "19",
       "date": "2010/03/17",
-      "salary": "$385,750"
+      "salary": "$385,750",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Michael Silva",
@@ -126,7 +141,8 @@
       "office": "London",
       "age": "66",
       "date": "2012/11/27",
-      "salary": "$198,500"
+      "salary": "$198,500",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Paul Byrd",
@@ -134,7 +150,8 @@
       "office": "New York",
       "age": "64",
       "date": "2010/06/09",
-      "salary": "$725,000"
+      "salary": "$725,000",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Gloria Little",
@@ -142,7 +159,8 @@
       "office": "New York",
       "age": "59",
       "date": "2014/04/10",
-      "salary": "$237,500"
+      "salary": "$237,500",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Bradley Greer",
@@ -150,7 +168,8 @@
       "office": "London",
       "age": "41",
       "date": "2012/10/13",
-      "salary": "$132,000"
+      "salary": "$132,000",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Dai Rios",
@@ -158,7 +177,8 @@
       "office": "Edinburgh",
       "age": "35",
       "date": "2012/09/26",
-      "salary": "$217,500"
+      "salary": "$217,500",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Jenette Caldwell",
@@ -166,7 +186,8 @@
       "office": "New York",
       "age": "30",
       "date": "2011/09/03",
-      "salary": "$345,000"
+      "salary": "$345,000",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Yuri Berry",
@@ -174,7 +195,8 @@
       "office": "New York",
       "age": "40",
       "date": "2014/06/25",
-      "salary": "$675,000"
+      "salary": "$675,000",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Caesar Vance",
@@ -182,7 +204,8 @@
       "office": "New York",
       "age": "21",
       "date": "2011/12/12",
-      "salary": "$106,450"
+      "salary": "$106,450",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Doris Wilder",
@@ -190,7 +213,8 @@
       "office": "Sidney",
       "age": "23",
       "date": "2010/09/20",
-      "salary": "$85,600"
+      "salary": "$85,600",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Angelica Ramos",
@@ -198,7 +222,8 @@
       "office": "London",
       "age": "47",
       "date": "2014/10/09",
-      "salary": "$1,200,000"
+      "salary": "$1,200,000",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Gavin Joyce",
@@ -206,7 +231,8 @@
       "office": "Edinburgh",
       "age": "42",
       "date": "2010/12/22",
-      "salary": "$92,575"
+      "salary": "$92,575",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Jennifer Chang",
@@ -214,7 +240,8 @@
       "office": "Singapore",
       "age": "28",
       "date": "2010/11/14",
-      "salary": "$357,650"
+      "salary": "$357,650",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Brenden Wagner",
@@ -222,7 +249,8 @@
       "office": "San Francisco",
       "age": "28",
       "date": "2011/06/07",
-      "salary": "$206,850"
+      "salary": "$206,850",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Fiona Green",
@@ -230,7 +258,8 @@
       "office": "San Francisco",
       "age": "48",
       "date": "2010/03/11",
-      "salary": "$850,000"
+      "salary": "$850,000",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Shou Itou",
@@ -238,7 +267,8 @@
       "office": "Tokyo",
       "age": "20",
       "date": "2011/08/14",
-      "salary": "$163,000"
+      "salary": "$163,000",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Michelle House",
@@ -246,7 +276,8 @@
       "office": "Sidney",
       "age": "37",
       "date": "2011/06/02",
-      "salary": "$95,400"
+      "salary": "$95,400",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Suki Burks",
@@ -254,7 +285,8 @@
       "office": "London",
       "age": "53",
       "date": "2014/10/22",
-      "salary": "$114,500"
+      "salary": "$114,500",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Prescott Bartlett",
@@ -262,7 +294,8 @@
       "office": "London",
       "age": "27",
       "date": "2011/05/07",
-      "salary": "$145,000"
+      "salary": "$145,000",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Gavin Cortez",
@@ -270,7 +303,8 @@
       "office": "San Francisco",
       "age": "22",
       "date": "2008/10/26",
-      "salary": "$235,500"
+      "salary": "$235,500",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Martena Mccray",
@@ -278,7 +312,8 @@
       "office": "Edinburgh",
       "age": "46",
       "date": "2011/03/09",
-      "salary": "$324,050"
+      "salary": "$324,050",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Unity Butler",
@@ -286,7 +321,8 @@
       "office": "San Francisco",
       "age": "47",
       "date": "2014/12/09",
-      "salary": "$85,675"
+      "salary": "$85,675",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Howard Hatfield",
@@ -294,7 +330,8 @@
       "office": "San Francisco",
       "age": "51",
       "date": "2008/12/16",
-      "salary": "$164,500"
+      "salary": "$164,500",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Hope Fuentes",
@@ -302,7 +339,8 @@
       "office": "San Francisco",
       "age": "41",
       "date": "2010/02/12",
-      "salary": "$109,850"
+      "salary": "$109,850",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Vivian Harrell",
@@ -310,7 +348,8 @@
       "office": "San Francisco",
       "age": "62",
       "date": "2014/02/14",
-      "salary": "$452,500"
+      "salary": "$452,500",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Timothy Mooney",
@@ -318,7 +357,8 @@
       "office": "London",
       "age": "37",
       "date": "2008/12/11",
-      "salary": "$136,200"
+      "salary": "$136,200",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Jackson Bradshaw",
@@ -326,7 +366,8 @@
       "office": "New York",
       "age": "65",
       "date": "2008/09/26",
-      "salary": "$645,750"
+      "salary": "$645,750",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Olivia Liang",
@@ -334,7 +375,8 @@
       "office": "Singapore",
       "age": "64",
       "date": "2011/02/03",
-      "salary": "$234,500"
+      "salary": "$234,500",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Bruno Nash",
@@ -342,7 +384,8 @@
       "office": "London",
       "age": "38",
       "date": "2011/05/03",
-      "salary": "$163,500"
+      "salary": "$163,500",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Sakura Yamamoto",
@@ -350,7 +393,8 @@
       "office": "Tokyo",
       "age": "37",
       "date": "2014/08/19",
-      "salary": "$139,575"
+      "salary": "$139,575",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Thor Walton",
@@ -358,7 +402,8 @@
       "office": "New York",
       "age": "61",
       "date": "2013/08/11",
-      "salary": "$98,540"
+      "salary": "$98,540",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Finn Camacho",
@@ -366,7 +411,8 @@
       "office": "San Francisco",
       "age": "47",
       "date": "2014/07/07",
-      "salary": "$87,500"
+      "salary": "$87,500",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Serge Baldwin",
@@ -374,7 +420,8 @@
       "office": "Singapore",
       "age": "64",
       "date": "2012/04/09",
-      "salary": "$138,575"
+      "salary": "$138,575",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Zenaida Frank",
@@ -382,7 +429,8 @@
       "office": "New York",
       "age": "63",
       "date": "2010/01/04",
-      "salary": "$125,250"
+      "salary": "$125,250",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Zorita Serrano",
@@ -390,7 +438,8 @@
       "office": "San Francisco",
       "age": "56",
       "date": "2012/06/01",
-      "salary": "$115,000"
+      "salary": "$115,000",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Jennifer Acosta",
@@ -398,7 +447,8 @@
       "office": "Edinburgh",
       "age": "43",
       "date": "2013/02/01",
-      "salary": "$75,650"
+      "salary": "$75,650",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Cara Stevens",
@@ -406,7 +456,8 @@
       "office": "New York",
       "age": "46",
       "date": "2011/12/06",
-      "salary": "$145,600"
+      "salary": "$145,600",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Hermione Butler",
@@ -414,7 +465,8 @@
       "office": "London",
       "age": "47",
       "date": "2011/03/21",
-      "salary": "$356,250"
+      "salary": "$356,250",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Lael Greer",
@@ -422,7 +474,8 @@
       "office": "London",
       "age": "21",
       "date": "2014/02/27",
-      "salary": "$103,500"
+      "salary": "$103,500",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Jonas Alexander",
@@ -430,7 +483,8 @@
       "office": "San Francisco",
       "age": "30",
       "date": "2010/07/14",
-      "salary": "$86,500"
+      "salary": "$86,500",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Shad Decker",
@@ -438,7 +492,8 @@
       "office": "Edinburgh",
       "age": "51",
       "date": "2008/11/13",
-      "salary": "$183,000"
+      "salary": "$183,000",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Michael Bruce",
@@ -446,7 +501,8 @@
       "office": "Singapore",
       "age": "29",
       "date": "2011/06/27",
-      "salary": "$183,000"
+      "salary": "$183,000",
+      "action":"Details | Edit | Disable"
     },
     {
       "name": "Donna Snider",
@@ -454,7 +510,8 @@
       "office": "New York",
       "age": "27",
       "date": "2011/01/25",
-      "salary": "$112,000"
+      "salary": "$112,000",
+      "action":"Details | Edit | Disable"
     }
   ]
 }
