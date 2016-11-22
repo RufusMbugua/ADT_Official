@@ -11,6 +11,11 @@ export const routes:Routes = [
     path: 'list-patients',
     loadChildren: 'app/patients/patient-list/patient-list.module#PatientListModule',
     data: { pageTitle: 'Patient List' }
+  },
+  {
+    path: 'dispense',
+    loadChildren: 'app/patients/patient-dispense/patient-dispense.module#PatientDispenseModule',
+    data: { pageTitle: 'Dispensing Details' }
   }
 ];
 

@@ -1,0 +1,51 @@
+<div id="content">
+  <sa-widgets-grid>
+    <!-- row -->
+    <div class="row">
+      <!-- ADD PATIENT WIDGET START -->
+      <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <!-- Widget ID (each widget will need unique ID)-->
+        <sa-widget>
+          <header>
+            <h2>
+            <strong>Patients</strong>Dispensing Details</h2>
+          </header>
+          <!-- widget div-->
+          <div role="content">
+            <!-- widget edit box -->
+            <div class="jarviswidget-editbox">
+              <!-- This area used as dropdown edit box -->
+            </div>
+            <!-- end widget edit box -->
+            <!-- widget content -->
+            <div class="widget-body">
+              <form>
+                <fieldset class="col-xs-24 col-sm-8 col-md-8 col-lg-6">
+                  <legend>Dispensing Information</legend>
+                  <div class="col-sm-12">
+                    <label>Select Dispensing point</label>
+                    <select class="form-control"
+                            id="select-1"
+                            placeholder="Select One">
+                      <option>Select One</option>
+                      <option>Main Store</option>
+                      <option>Pharmacy</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+										<label>Patient Number CCC</label>
+										<input class="form-control" placeholder="autofilled" type="text">
+									</div>               
+
+                </fieldset>
+                <fieldset class="col-xs-24 col-sm-8 col-md-8 col-lg-6">
+                  <legend>Previous Patient Information</legend>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </sa-widget>
+      </article>
+    </div>
+  </sa-widgets-grid>
+</div>
