@@ -8,6 +8,8 @@ import {BrowserModule} from "@angular/platform-browser";
 import {UserModule} from "./shared/user/user.module";
 import {UserService} from "./shared/user/user.service";
 
+import {HttpModule, JsonpModule} from '@angular/http';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -17,6 +19,9 @@ import {UserService} from "./shared/user/user.service";
     BrowserModule,
 
     routing,
+
+    HttpModule,
+    JsonpModule,
 
     SmartadminModule.forRoot(),
     UserModule.forRoot()
