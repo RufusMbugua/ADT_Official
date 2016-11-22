@@ -10,19 +10,12 @@ import {Patient} from '../patients';
 })
 export class PatientListComponent implements OnInit {
 
-  mode = 'Observable';
   patients : Patient[];
-  constructor(private patientsService:PatientsService) { 
-      // this.patientsService.getPatients()
-      //     .subscribe(patients => { 
-      //         this.patients = patients; 
-      //      });
-  }
-  getPatients(){
-    // this.patientsService.getPatients().subscribe(patients => { console.log(patients) 
-    // });
-  }
+  // constructor(private patientsService:PatientsService) { 
+
+  // }
+
   ngOnInit() {
-    // this.getPatients();
+
   }
 }
