@@ -1,11 +1,11 @@
-import {RouterModule, Routes} from "@angular/router";
+import { RouterModule, Routes } from "@angular/router";
 
 
-export const routes:Routes = [
-  { 
+export const routes: Routes = [
+  {
     path: 'add-patient',
     loadChildren: 'app/patients/patient-add/patient-add.module#PatientAddModule',
-    data: {pageTitle: 'Add Patient'}
+    data: { pageTitle: 'Add Patient' }
   },
   {
     path: 'list-patients',
@@ -16,6 +16,11 @@ export const routes:Routes = [
     path: 'dispense',
     loadChildren: 'app/patients/patient-dispense/patient-dispense.module#PatientDispenseModule',
     data: { pageTitle: 'Dispensing Details' }
+  },
+  {
+    path: 'edit',
+    loadChildren: 'app/patients/patient-edit/patient-edit.module#PatientEditModule',
+    data: { pageTitle: 'Edit Patient' }
   }
 ];
 
