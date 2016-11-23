@@ -10,14 +10,14 @@
           </header>
           <div>
             <div class="widget-body no-padding">
-              <sa-datatable
-                [options]="{
-            ajax: 'http://192.168.33.10/adt_api/public/api/v1/patients',
-            columns: [ {data: 'ccc_number'}, {data: 'first_name'}, {data: 'first_name'}, {data: 'phone_number'}, {data: 'first_name'}, {data: 'first_name'} ], buttons: [
-                'copy', 'excel', 'pdf', 'print'
-                ] }
-            "
-                filter="true" tableClass="table table-condenced table-striped table-bordered">
+              <!-- This is where the configuration of the datatable takes place. -->
+              <sa-datatable [options]="
+                {
+                  colReorder: false,
+                  ajax: 'assets/api/tables/patients.dummy.json',
+                  columns: [{data: 'ccc_no'}, {data: 'patient_name'}, {data: 'next_appointment'} , {data: 'contact'}, {data: 'current_regimen'}, {data: 'status'}, {data: 'action'}], 
+                  buttons: ['copy', 'excel', 'pdf', 'print']
+                }" filter="true" tableClass="table table-condenced table-striped table-bordered" width="80%">
                 <thead>
                   <tr>
                     <th class="hasinput"><input type="text" class="form-control" placeholder="Filter CCC No" />
