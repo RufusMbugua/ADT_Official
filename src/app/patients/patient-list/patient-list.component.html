@@ -12,8 +12,8 @@
             <div class="widget-body no-padding">
               <sa-datatable
                 [options]="{
-            ajax: 'http://192.168.33.10/adt_api/public/api/v1/patients',
-            columns: [ {data: 'ccc_number'}, {data: 'first_name'}, {data: 'first_name'}, {data: 'phone_number'}, {data: 'first_name'}, {data: 'first_name'} ], buttons: [
+            ajax: 'http://192.168.33.10/ADT_api/public/api/v1/patients',
+            columns: [ {data: 'ccc_number'}, {data: 'first_name'}, {data: 'first_name'}, {data: 'phone_number'}, {data: 'first_name'}, {data: 'patient_status.status_id' } ], buttons: [
                 'copy', 'excel', 'pdf', 'print'
                 ] }
             "

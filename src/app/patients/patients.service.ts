@@ -12,4 +12,5 @@ export class PatientsService {
         return this.http.get('http://192.168.33.10/adt_api/public/api/v1/patients')
             .map(res => res.json());
     }
+    
 }
