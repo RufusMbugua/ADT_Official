@@ -35,6 +35,7 @@
 
 							<form>
 								<!-- Patients Information and Demographics -->
+															{{diagnostic}}
 								<fieldset class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 									<legend>Patient Information and Demographics</legend>
 									<div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -62,7 +63,7 @@
 										<div class="form-group">
 											<label>Date of Birth:</label>
 											<div class="input-group">
-												<input type="text" name="mydate" placeholder="Select a date" class="form-control datepicker" [saUiDatepicker]="{ dateFormat: 'dd/mm/yy' }">
+												<input type="text" name="mydate" placeholder="Select a date" class="form-control datepicker" [(ngModel)]="dob" name="dob" [saUiDatepicker]="{ dateFormat: 'dd/mm/yy' }">
 												<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
 											</div>
 										</div>
@@ -82,7 +83,7 @@
 									</div>
 									<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<label>Gender</label>
-										<select class="form-control" id="select-1">
+										<select class="form-control" id="select-1" [(ngModel)]="gender" name="gender">
 											<option>Male</option>
 											<option>Female</option>
 										</select>
@@ -97,35 +98,35 @@
 									</div>
 									<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<label>Body Surface Area (MSQ)</label>
-										<input class="form-control" placeholder="<<auto generate>>" type="text">
+										<input class="form-control" placeholder="<<auto generate>>" value="{{weight + height}}" [(ngModel)]="bsa" name="bsa" type="text">
 									</div>
 									<div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
 										<label>Patient Phone Contacts</label>
-										<input class="form-control" placeholder="e.g 0712345678" type="text">
+										<input class="form-control" placeholder="e.g 0712345678" [(ngModel)]="contact" name="contact" type="text">
 									</div>
 									<div class=" form-group col-sm-6">
 										<label>Receive SMS Reminders</label>
 										<div class="col-md-10">
 											<label class="radio radio-inline">															
-												<input type="radio" class="radiobox" name="style-0a">
+												<input type="radio" class="radiobox" [(ngModel)]="smsNotification" name="style-0a">
 												<span>Yes</span>                                 
 											</label>
 											<label class="radio radio-inline">
-												<input type="radio" class="radiobox" name="style-0a">
+												<input type="radio" class="radiobox" [(ngModel)]="smsNotification" name="style-0a">
 												<span>No</span>  
 											</label>
 										</div>
 									</div>
 									<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<label>Patients Physical Contact(s)</label>
-										<textarea class="form-control" placeholder="Textarea" rows="3"></textarea>
+										<textarea class="form-control" placeholder="Textarea" rows="3" [(ngModel)]="address" name="address" ></textarea>
 									</div>
 									<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<label>Does patient belong to any support group?</label>
 										<div class="col-sm-12">
 											<label class="checkbox-inline"><input type="checkbox">Yes</label>
 										</div>
-										<textarea class="form-control" placeholder="Textarea" rows="3"></textarea>
+										<textarea class="form-control" placeholder="Textarea" rows="3" [(ngModel)]="supportGroup" name="supportGroup"></textarea>
 									</div>
 								</fieldset>
 								<!-- Patient History -->
@@ -133,7 +134,7 @@
 									<legend>Patient History</legend>
 									<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<label>Does Patient have other Chronic Illnesses</label>
-										<select class="form-control" id="select-1" placeholder="--Select Options--">
+										<select class="form-control" id="select-1" placeholder="--Select Options--" [(ngModel)]="chronicIllnesses" name="chronicIllnesses">
 											<option>--Select--</option>
 											<option>Male</option>
 											<option>Female</option>
@@ -148,7 +149,7 @@
 									</div>
 									<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<label>List Them Below (Use Commas to Separate)</label>
-										<textarea class="form-control" rows="2"></textarea>
+										<textarea class="form-control" rows="2" [(ngModel)]="otherIllness" name="otherIllness" ></textarea>
 									</div>
 									<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<label>Is Patient Taking any Other Drugs?</label>
@@ -158,11 +159,11 @@
 									</div>
 									<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<label>List Them</label>
-										<textarea class="form-control" rows="2"></textarea>
-									</div>
+										<textarea class="form-control" rows="2" [(ngModel)]="drugs" name="drugs"></textarea>
+									</div>1
 									<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<label>Drug Allergies/ADR</label>
-										<select class="form-control" id="select-1" placeholder="--Select Options--">
+										<select class="form-control" id="select-1" placeholder="--Select Options--" [(ngModel)]="drugAllergies" name="drugAllergies" >
 											<option>--Select--</option>
 											<option>Male</option>
 											<option>Female</option>
@@ -177,32 +178,32 @@
 									</div>
 									<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<label>List Them</label>
-										<textarea class="form-control" rows="2"></textarea>
+										<textarea class="form-control" rows="2" [(ngModel)]="otherDrugs" name="otherDrugs"></textarea>
 									</div>
 									<div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
 										<label>Does Patient Smoke?</label>
-										<select class="form-control" id="select-1" placeholder="No">
+										<select class="form-control" id="select-1" placeholder="No" [(ngModel)]="smoke" name="smoke">
 											<option>No</option>
 											<option>Yes</option>
 										</select>
 									</div>
 									<div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
 										<label>Does Patient Drink Alcohol?</label>
-										<select class="form-control" id="select-1" placeholder="No">
+										<select class="form-control" id="select-1" placeholder="No" [(ngModel)]="alcohol" name="alcohol">
 											<option>No</option>
 											<option>Yes</option>
 										</select>
 									</div>
 									<div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
 										<label>Has Patient been tested for TB?</label>
-										<select class="form-control" id="select-1" placeholder="No">
+										<select class="form-control" id="select-1" placeholder="No" [(ngModel)]="tbTested" name="tbTested">
 											<option>No</option>
 											<option>Yes</option>
 										</select>
 									</div>
 									<div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
 										<label>Does Patient have TB?</label>
-										<select class="form-control" id="select-1" placeholder="No">
+										<select class="form-control" id="select-1" placeholder="No" [(ngModel)]="tb" name="tb">
 											<option>No</option>
 											<option>Yes</option>
 										</select>
@@ -214,46 +215,43 @@
 									<legend>Patient Information</legend>
 									<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<label>Date Patient Enrolled</label>
-										<input type="text" class="form-control">
+										<input type="text" class="form-control" [saUiDatepicker]="{ dateFormat: 'dd/mm/yy' }">
 									</div>
 									<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<label>Current Status</label>
-										<select class="form-control" id="select-1" placeholder="No">
+										<select class="form-control" id="select-1" placeholder="No" [(ngModel)]="status" name="status">
 											<option>No</option>
 											<option>Yes</option>
 										</select>
 									</div>
 									<div class="col-sm-12">
 										<label>Source of Patient</label>
-										<select class="form-control" id="select-1" placeholder="No">
+										<select class="form-control" id="select-1" placeholder="No" [(ngModel)]="source" name="source">
 											<option>No</option>
 											<option>Yes</option>
 										</select>
 									</div>
 									<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<label>Type of Service</label>
-										<select class="form-control" id="select-1" placeholder="No">
+										<select class="form-control" id="select-1" placeholder="No" [(ngModel)]="service" name="service">
 										<option>No</option>
 										<option>Yes</option>
 									</select>
 									</div>
 									<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<label>Start Regimen</label>
-										<select class="form-control" id="select-1" placeholder="No">
+										<select class="form-control" id="select-1" placeholder="No" [(ngModel)]="regimen" name="regimen">
 											<option>No</option>
 											<option>Yes</option>
 										</select>
 									</div>
 									<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<label>Start Regimen Date</label>
-										<select class="form-control" id="select-1" placeholder="No">
-											<option>No</option>
-											<option>Yes</option>
-										</select>
+										<input type="text" class="form-control" [saUiDatepicker]="{ dateFormat: 'dd/mm/yy' }">
 									</div>
 									<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<label>WHO Stage</label>
-										<select class="form-control" id="select-1" placeholder="No">
+										<select class="form-control" id="select-1" placeholder="No" [(ngModel)]="whoStage" name="whoStage">
 											<option>No</option>
 											<option>Yes</option>
 										</select>
@@ -277,6 +275,7 @@
 									</div>
 								</fieldset>
 							</form>
+
 						</div>
 						<!-- end widget content -->
 					</div>
