@@ -12,22 +12,22 @@
             <div class="widget-body no-padding">
               <!-- This is where the configuration of the datatable takes place. -->
               <sa-datatable [options]="
-                {
-                  colReorder: false,
-                  ajax: 'assets/api/tables/patients.dummy.json',
-                  columns: [{data: 'ccc_no'}, {data: 'patient_name'}, {data: 'next_appointment'} , {data: 'contact'}, {data: 'current_regimen'}, {data: 'status'}, {data: 'action'}], 
-                  buttons: ['copy', 'excel', 'pdf', 'print']
-                }" filter="true" tableClass="table table-condenced table-striped table-bordered" width="80%">
+        {
+          colReorder: false,
+          ajax: 'assets/api/tables/patients.dummy.json',
+          columns: [{data: 'ccc_no'}, {data: 'patient_name'}, {data: 'next_appointment'} , {data: 'contact'}, {data: 'current_regimen'}, {data: 'status'}], 
+          buttons: ['copy', 'excel', 'pdf', 'print']
+        }" filter="true" tableClass="table table-condenced table-striped table-bordered" width="80%">
                 <thead>
                   <tr>
                     <th class="hasinput"><input type="text" class="form-control" placeholder="Filter CCC No" />
                     </th>
                     <th class="hasinput">
                       <div class="input-group"><input class="form-control" placeholder="Filter Patient Name" type="text" /> <span class="input-group-addon"> <span class="onoffswitch"> <input
-                      type="checkbox" name="start_interval" class="onoffswitch-checkbox"
-                      id="st3"/> <label class="onoffswitch-label" for="st3"> <span
-                      class="onoffswitch-inner" data-swchon-text="YES"
-                      data-swchoff-text="NO"></span> <span class="onoffswitch-switch"></span> </label>
+              type="checkbox" name="start_interval" class="onoffswitch-checkbox"
+              id="st3"/> <label class="onoffswitch-label" for="st3"> <span
+              class="onoffswitch-inner" data-swchon-text="YES"
+              data-swchoff-text="NO"></span> <span class="onoffswitch-switch"></span> </label>
                         </span>
                         </span>
                       </div>

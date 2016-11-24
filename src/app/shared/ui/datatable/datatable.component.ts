@@ -6,9 +6,9 @@ declare var $: any;
 
   selector: 'sa-datatable',
   template: `
-      <table class="dataTable {{tableClass}}" width="{{width}}">
-        <ng-content></ng-content>
-      </table>
+  <table class="dataTable {{tableClass}}" width="{{width}}">
+    <ng-content></ng-content>
+  </table>
 `,
   styles: [
     require('smartadmin-plugins/datatables-bundle/datatables.min.css')
@@ -77,28 +77,24 @@ export class DatatableComponent implements OnInit {
       responsive: true,
       initComplete: (settings, json) => {
         element.parent().find('.input-sm', ).removeClass("input-sm").addClass('input-md');
-      }
+      },
+      "columnDefs": [
+        {
+          // The `data` parameter refers to the data for the cell (defined by the
+          // `data` option, which defaults to the column being worked with, in
+          // this case `data: 0`.
+          "render": function (data, type, row) {
+            return '<a class="btn btn-primary btn-xs" href="patients/dispense/' + row['ccc_no'] + '">Dispense</a> <a class="btn btn-primary btn-xs" href="patients/view/' + row['ccc_no'] + '">Detail</a>'
+          },
+          // NOTE: Targeting the [actions] column.
+          "targets": 6
+        },
+        { "visible": false, "targets": [3] }
+      ],
     });
-
-    /**
-     * Try and error
-     */
-    // if (this.options) {
-    //   element.on('click', 'td', function () {
-    //     let str = _dataTable.cell(this);
-    //     // Logic to add hyperlinks to the data.
-    //     str.data( (str.data().split("|"))[0].link("/dispenseManagement/dispense/3")).draw();
-    //   });
-    // }
 
     const _dataTable = element.DataTable(options);
 
-     if (this.options) {
-       if (_dataTable.column( 6 ) != null) {
-         alert(String(_dataTable.column( 6 ).data()));
-       }
-    }
-    
     if (this.filter) {
       // Apply the filter
       element.on('keyup change', 'thead th input[type=text]', function () {
