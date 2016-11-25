@@ -255,53 +255,118 @@
 										<div class="widget-body">
 											<hr class="simple">
 											<ul id="myTab3" class="nav nav-tabs tabs-pull-right bordered">
-												<li [class.active]="state.tabs.demo6=='l1'" class="active">
-													<a (click)="state.tabs.demo6 = 'l1'">Viral Load Data</a>
+												<li class="pull-right">
+													<a data-toggle="modal" data-target="#viralLoadModal">Viral Load Data</a>
 												</li>
-												<li [class.active]="state.tabs.demo6=='l2'" class="pull-right">
-													<a (click)="state.tabs.demo6 = 'l2'">Patient Info Report</a>
+												<li class="pull-right">
+													<a data-toggle="modal" data-target="#patientSummaryModal">Patient Info Report</a>
 												</li>
-												<li [class.active]="state.tabs.demo6=='l2'" class="pull-right">
-													<a (click)="state.tabs.demo6 = 'l3'">Edit Patient Record</a>
+												<li class="pull-right">
+													<a class="mdl-navigation__link" [routerLink]="['/patients/edit']">Edit Patient Record</a>
 												</li>
-												<li [class.active]="state.tabs.demo6=='l2'" class="pull-right">
-													<a (click)="state.tabs.demo6 = 'l4'">Dispense to Patient</a>
+												<li class="pull-right">
+													<a class="mdl-navigation__link" [routerLink]="['/patients/dispense']">Dispense to Patient</a>
 												</li>
 											</ul>
-
 											<tabset class="padding-10">
-												<tab [active]="state.tabs.demo6 == 'l1'">
-													<p>
-														My therapist told me the way to achieve true inner peace is to finish what I start. So far I’ve finished two bags of M&Ms
-														and a chocolate cake. I feel better already.
-													</p>
-												</tab>
+												<sa-widget [editbutton]="false" color="darken">
+													<header><span class="widget-icon"> <i class="fa fa-table"></i> </span>
+														<h2>Dispensing History</h2>
+													</header>
+													<div>
+														<div class="widget-body no-padding">
+															<sa-datatable paginationLength="true" tableClass="table table-striped table-bordered table-hover" width="100%">
+																<thead>
+																	<tr>
+																		<th data-hide="phone">Date</th>
+																		<th data-class="expand"><i class="text-muted hidden-md hidden-sm hidden-xs"></i> Purpose of Visit
+																		</th>
+																		<th data-hide="phone"><i class="text-muted hidden-md hidden-sm hidden-xs"></i> Dose
+																		</th>
+																		<th>Company</th>
+																		<th data-hide="phone,tablet"><i class=" txt-color-blue hidden-md hidden-sm hidden-xs"></i> Duration
+																		</th>
+																		<th data-hide="phone,tablet">Action</th>
+																		<th data-hide="phone,tablet"><i class="txt-color-blue hidden-md hidden-sm hidden-xs"></i> Drug</th>
+																		<th>Quantity</th>
+																		<th>Weight</th>
+																		<th>Current Regimen</th>
+																		<th>Batch No</th>
+																		<th>Pill Count</th>
+																		<th>Adherance</th>
+																		<th>Operator</th>
+																		<th>Reasons for Change</th>
+																	</tr>
+																</thead>
+															</sa-datatable>
+														</div>
+													</div>
+												</sa-widget>
+												<!--Viral load data Modal-->
+												<div id="viralLoadModal" class="modal fade" role="dialog">
+													<div class="modal-dialog modal-lg">
+														<div class="modal-content">
+															<div class="modal-header">
+																<button aria-label="Close" class="close" type="button">
+																	<span aria-hidden="true">×</span>
+																</button>
+																<h4 class="modal-title">Viral Load Summary</h4>
+															</div>
+															<div class="modal-body">
 
-												<tab [active]="state.tabs.demo6 == 'l2'">
-													<p>
-														Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog
-														sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee.
-													</p>
-												</tab>
-												<tab [active]="state.tabs.demo6 == 'l3'">
-													<p>
-														Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table
-														readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia
-														banksy hoodie helvetica. DIY synth PBR banksy irony.
-													</p>
-												</tab>
-												<tab [active]="state.tabs.demo6 == 'l4'">
-													<p>
-														Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid
-														scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo
-														park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table.
-													</p>
-												</tab>
+																<div class="row">
+																	<div class="col-md-12">
+																		<div class="form-group">
+																			<div class="table-responsive">
+																				<table class="table table-bordered">
+																					<thead>
+																						<tr>
+																							<th [ngStyle]="{width:'60%'}">Date Tested</th>
+																							<th>Result</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																						<tr>
+																							<td>This and That Day</td>
+																							<td>Ebola!!!!!</td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--End of viralLoadModal-->
+												<!--Patient Summary Modal-->
+												<div id="patientSummaryModal" class="modal fade" role="dialog">
+													<div class="modal-dialog modal-lg">
+														<div class="modal-content">
+															<div class="modal-header">
+																<button aria-label="Close" class="close" type="button">
+																	<span aria-hidden="true">×</span>
+																</button>
+																<h4 class="modal-title">Patient Information Summary</h4>
+															</div>
+															<div class="modal-body">
+
+																<div class="row">
+																	<div class="col-md-12">
+																		<div class="form-group">
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--End Patient Summary Modal-->
 											</tabset>
-
 										</div>
 										<!-- end widget content -->
-
 									</div>
 								</fieldset>
 							</form>
