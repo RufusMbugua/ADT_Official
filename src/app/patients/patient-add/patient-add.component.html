@@ -35,7 +35,6 @@
 
 							<form>
 								<!-- Patients Information and Demographics -->
-															{{diagnostic}}
 								<fieldset class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 									<legend>Patient Information and Demographics</legend>
 									<div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -84,8 +83,8 @@
 									<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<label>Gender</label>
 										<select class="form-control" id="select-1" [(ngModel)]="gender" name="gender">
-											<option>Male</option>
-											<option>Female</option>
+											<option value="male">Male</option>
+											<option value="female">Female</option>
 										</select>
 									</div>
 									<div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -108,11 +107,11 @@
 										<label>Receive SMS Reminders</label>
 										<div class="col-md-10">
 											<label class="radio radio-inline">															
-												<input type="radio" class="radiobox" [(ngModel)]="smsNotification" name="style-0a">
+												<input type="radio" value="1" class="radiobox" [(ngModel)]="smsNotification" name="style-0a">
 												<span>Yes</span>                                 
 											</label>
 											<label class="radio radio-inline">
-												<input type="radio" class="radiobox" [(ngModel)]="smsNotification" name="style-0a">
+												<input type="radio" value="0" class="radiobox" [(ngModel)]="smsNotification" name="style-0a">
 												<span>No</span>  
 											</label>
 										</div>
@@ -136,9 +135,7 @@
 										<label>Does Patient have other Chronic Illnesses</label>
 										<select class="form-control" id="select-1" placeholder="--Select Options--" [(ngModel)]="chronicIllnesses" name="chronicIllnesses">
 											<option>--Select--</option>
-											<option>Male</option>
-											<option>Female</option>
-											<option>Other</option>
+											<option *ngFor="let illness of illnesses" value="illness.id">{{illness.name}}</option>
 										</select>
 									</div>
 									<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -159,10 +156,11 @@
 									</div>
 									<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<label>List Them</label>
-										<textarea class="form-control" rows="2" [(ngModel)]="drugs" name="drugs"></textarea>
+										<textarea class="form-control" rows="2" [(ngModel)]="otherDrugs" name="otherDrugs"></textarea>
 									</div>1
 									<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<label>Drug Allergies/ADR</label>
+										<!--HERE-->
 										<select class="form-control" id="select-1" placeholder="--Select Options--" [(ngModel)]="drugAllergies" name="drugAllergies" >
 											<option>--Select--</option>
 											<option>Male</option>
@@ -183,29 +181,29 @@
 									<div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
 										<label>Does Patient Smoke?</label>
 										<select class="form-control" id="select-1" placeholder="No" [(ngModel)]="smoke" name="smoke">
-											<option>No</option>
-											<option>Yes</option>
+											<option value="0">No</option>
+											<option value="1">Yes</option>
 										</select>
 									</div>
 									<div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
 										<label>Does Patient Drink Alcohol?</label>
 										<select class="form-control" id="select-1" placeholder="No" [(ngModel)]="alcohol" name="alcohol">
-											<option>No</option>
-											<option>Yes</option>
+											<option value="0">No</option>
+											<option value="1">Yes</option>
 										</select>
 									</div>
 									<div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
 										<label>Has Patient been tested for TB?</label>
 										<select class="form-control" id="select-1" placeholder="No" [(ngModel)]="tbTested" name="tbTested">
-											<option>No</option>
-											<option>Yes</option>
+											<option value="0">No</option>
+											<option value="1">Yes</option>
 										</select>
 									</div>
 									<div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
 										<label>Does Patient have TB?</label>
 										<select class="form-control" id="select-1" placeholder="No" [(ngModel)]="tb" name="tb">
-											<option>No</option>
-											<option>Yes</option>
+											<option value="0">No</option>
+											<option value="1">Yes</option>
 										</select>
 									</div>
 								</fieldset>
@@ -215,34 +213,30 @@
 									<legend>Patient Information</legend>
 									<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<label>Date Patient Enrolled</label>
-										<input type="text" class="form-control" [saUiDatepicker]="{ dateFormat: 'dd/mm/yy' }">
+										<input type="date" class="form-control" [(ngModel)]="dateEnrolled" name="dateEnrolled" >
 									</div>
 									<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<label>Current Status</label>
-										<select class="form-control" id="select-1" placeholder="No" [(ngModel)]="status" name="status">
-											<option>No</option>
-											<option>Yes</option>
+										<select class="form-control" id="select-1" placeholder="Select Status" [(ngModel)]="status" name="status">
+											<option *ngFor="let status of statuses" value="{{status.id}}">{{status.name}}</option>
 										</select>
 									</div>
 									<div class="col-sm-12">
 										<label>Source of Patient</label>
 										<select class="form-control" id="select-1" placeholder="No" [(ngModel)]="source" name="source">
-											<option>No</option>
-											<option>Yes</option>
+											<option *ngFor="let source of sources " value="{{source.id}}">{{source.name}}</option>
 										</select>
 									</div>
 									<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<label>Type of Service</label>
 										<select class="form-control" id="select-1" placeholder="No" [(ngModel)]="service" name="service">
-										<option>No</option>
-										<option>Yes</option>
+										<option  *ngFor=" let service of services" value="{{service.id}}">{{service.name}}</option>
 									</select>
 									</div>
 									<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<label>Start Regimen</label>
 										<select class="form-control" id="select-1" placeholder="No" [(ngModel)]="regimen" name="regimen">
-											<option>No</option>
-											<option>Yes</option>
+											<option *ngFor="let regimen of regimens" value="{{regimen.id}}">{{regimen.name}}</option>
 										</select>
 									</div>
 									<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -252,15 +246,13 @@
 									<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<label>WHO Stage</label>
 										<select class="form-control" id="select-1" placeholder="No" [(ngModel)]="whoStage" name="whoStage">
-											<option>No</option>
-											<option>Yes</option>
+											<option *ngFor="let whoStage of who_stages" value="{{whoStage.id}}">{{whoStage.name}}</option>
 										</select>
 									</div>
 									<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<label>Drug Prophylaxis</label>
 										<select class="form-control" id="select-1" placeholder="No">
-											<option>No</option>
-											<option>Yes</option>
+											<option *ngFor="let prophylaxis of prophylaxiss">{{prophylaxis.name}}</option>
 										</select>
 									</div>
 
