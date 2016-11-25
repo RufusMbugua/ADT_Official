@@ -10,6 +10,8 @@ import { UserService } from "./shared/user/user.service";
 
 import { HttpModule, JsonpModule } from '@angular/http';
 
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -24,7 +26,9 @@ import { HttpModule, JsonpModule } from '@angular/http';
     JsonpModule,
 
     SmartadminModule.forRoot(),
-    UserModule.forRoot()
+    UserModule.forRoot(),
+
+    FormsModule
   ],
   providers: [UserService],
   // entryComponents: [AppComponent],

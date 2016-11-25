@@ -85,6 +85,7 @@ export class DatatableComponent implements OnInit {
           // this case `data: 0`.
           "render": function (data, type, row) {
             return '<a class="btn btn-primary btn-xs" href="patients/dispense/' + row['ccc_no'] + '">Dispense</a> <a class="btn btn-primary btn-xs" href="patients/view/' + row['ccc_no'] + '">Detail</a>'
+            // return '<a class="btn btn-primary btn-xs" href="patients/dispense/' + row['ccc_number'] + '">Dispense</a> <a class="btn btn-primary btn-xs" href="patients/view/' + row['ccc_number'] + '">Detail</a>'
           },
           // NOTE: Targeting the [actions] column.
           "targets": 6
